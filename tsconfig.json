@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                          // Specify ECMAScript target version
+      "module": "ESNext",                       // Specify module code generation
+      "lib": ["DOM", "DOM.Iterable", "ESNext"], // Include library files for browser compatibility
+      "strict": true,                           // Enable all strict type-checking options
+      "esModuleInterop": true,                  // Enable interop between ES modules and CommonJS
+      "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file imports
+      "skipLibCheck": true,                     // Skip type checking of declaration files
+      "moduleResolution": "Node",              // Use Node.js module resolution
+      "allowSyntheticDefaultImports": true,    // Allow default imports from modules with no default export
+      "outDir": "./dist",                       // Output directory for compiled JavaScript files
+      "rootDir": "./script_folder",                       // Root directory of your TypeScript source files
+      "resolveJsonModule": true,                // Enable importing JSON files
+      "noEmitOnError": true,                    // Prevent emitting JS files if there's a TypeScript error
+      "baseUrl": "./",                           // Base directory for non-relative module names
+      "paths": {                                // Configure module name aliases
+        "@components/*": ["src/components/*"],
+        "@styles/*": ["src/styles/*"]
+      }
+    },
+    "include": ["script_folder/**/*.ts"],                            // Include all TypeScript files in the `src` folder                           // Include all TypeScript React files in the `src` fold],
+    "exclude": ["node_modules"],                           // Exclude `node_modules` from the build proces                              // Exclude output director ]
+  }
+  
