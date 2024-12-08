@@ -236,7 +236,65 @@ body, ul, li, a, p, form, input, button {
     color: #ffcc00;
     transform: scale(1.2); /* Slight zoom on hover */
 }
+.gallery-img {
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+.modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
 
-  
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.img-thumbnail {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+}
+.add-to-cart-button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+/* Style for the View Cart link in the modal header */
+.view-cart-link {
+    position: absolute;
+    top: 15px; /* Adjust vertical positioning */
+    right: 15px; /* Adjust horizontal positioning */
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+}
+
+.view-cart-link:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: #0056b3; /* Darker shade for hover */
+}
+
+/* Adjust modal layout if needed */
+.modal-body {
+    padding-top: 20px;
+}
+
+
   
   
