@@ -193,6 +193,8 @@ body, ul, li, a, p, form, input, button {
     background: transparent;
 }
 #gallery {
+    height: 100vh;
+    overflow-y: auto;
     padding-top: 130px;
 }
 .footer-section {
@@ -294,6 +296,7 @@ body, ul, li, a, p, form, input, button {
 .modal-body {
     padding-top: 20px;
 }
+
 
 
   

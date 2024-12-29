@@ -352,41 +352,55 @@ class CartManager {
 
 // Initialize the shopping cart on DOM content load
 
-document.addEventListener("DOMContentLoaded", () => {
-    const pictures = Array.from(
-        { length: 20 },
-        (_, i) => ({
-            src: `../images/image${i + 1}.jpg`,
-            name: `Item ${i + 1}`,
-            price: Math.round(Math.random() * 100) + 10,
-        })
-    );
-    const galleryConfig: GalleryConfig = {
-        batchSize: 10,
-        gridClasses: "col-12 col-sm-6 col-md-4 col-lg-3",
-        observerOptions: { root: null, threshold: 0.1 },
-        fallbackImage: "../images/fallback.jpg",
-    };
+document.addEventListener("DOMContentLoaded", async () => {
+    try {
+        if (!localStorage.getItem("cart")) {
+            localStorage.setItem("cart", JSON.stringify([]));
+        }
+        // Fetch products from the backend API
+        const response = await fetch("http://localhost:3000/api/products");
+        if (!response.ok) throw new Error("Failed to fetch products");
 
-    
-    const cart = new EnhancedCart("cart-icon", "cartModal");
-    new InfiniteScrollGallery("gallery", cart, pictures, galleryConfig);
-    
+        const products = await response.json();
+
+        const pictures = products.map((product: any) => ({
+            src: product.image_url,
+            name: product.name,
+            price: product.price,
+        }));
+
+        // Pass `pictures` into your gallery initialization logic
+        const galleryConfig: GalleryConfig = {
+            batchSize: 10,
+            gridClasses: "col-12 col-sm-6 col-md-4 col-lg-3",
+            fallbackImage: "../images/fallback.jpg",
+        };
+        const cart = new EnhancedCart("cart-icon", "cartModal");
+        new InfiniteScrollGallery("gallery", cart, pictures, galleryConfig);
+    } catch (error) {
+        console.error("Error fetching products:", error);
+    }
+    // Initialize CartManager
+    try {
+        new CartManager("view-cart-items", "subtotal");
+    } catch (error) {
+        console.error("Error initializing CartManager:", error);
+    }
+    // Set up checkout button
+    const checkoutButton = document.getElementById("checkout-button");
+    if (checkoutButton) {
+        checkoutButton.addEventListener("click", () => {
+            const cartData = localStorage.getItem("cart") || "[]";
+            localStorage.setItem("cart", cartData);
+            window.location.href = "../htmls_folder/payment.html";
+        });
+    } else {
+        console.warn("Checkout button not found.");
+    }
 });
-document.addEventListener("DOMContentLoaded", () => {
-    new CartManager("view-cart-items", "subtotal");
-});
 
-// Target the checkout button
-const checkoutButton = document.getElementById("checkout-button") as HTMLButtonElement;
 
-// Add click event listener to the button
-checkoutButton.addEventListener("click", () => {
-    // Save cart data to localStorage (if needed)
-    const cartData = localStorage.getItem("cart") || "[]";
-    localStorage.setItem("cart", cartData);
 
-    // Redirect to payment.html
-    window.location.href = "../htmls_folder/payment.html";
-});
+
+
 

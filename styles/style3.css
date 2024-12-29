@@ -93,6 +93,13 @@ body {
         width: 100%;
         margin-top: 20px;
     }
+    .order-options {
+      flex-direction: column; /* Stack options vertically on small screens */
+      gap: 10px;
+    }
+    .order-option {
+        width: 100%; /* Full width for small devices */
+    }  
   }
   .form-label {
     font-size: 14px;
@@ -102,4 +109,67 @@ body {
     font-size: 14px;
   }
   
+  /* Order Options Section */
+.order-options {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+}
+
+.order-option {
+  flex: 1;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-option input[type="radio"] {
+  display: none; /* Hide actual radio buttons */
+}
+
+.order-option label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.order-option i {
+  font-size: 24px;
+  color: #6c757d;
+}
+
+/* Active/Selected Option */
+.order-option input[type="radio"]:checked + label {
+  color: #7f56d9;
+  font-weight: 600;
+}
+
+.order-option input[type="radio"]:checked + label i {
+  color: #7f56d9;
+}
+
+/* Hover Effect */
+.order-option:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: #7f56d9;
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+  .order-options {
+    flex-direction: column;
+  }
+
+  .order-option {
+    width: 100%;
+  }
+}
+
   
