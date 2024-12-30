@@ -49,10 +49,6 @@ export class InfiniteScrollGallery {
         const img = this.createImage(picture.src, picture.name || `Picture ${picture.id}`);
         const nameLabel = this.createElement("p", "text-center mt-2", picture.name);
         const priceLabel = this.createElement("p", "text-center mt-1", `$${picture.price?.toFixed(2)}`);
-        if (picture.stock === 0) {
-            const outOfStockOverlay = this.createElement("div", "out-of-stock-overlay", "Out of Stock");
-            col.appendChild(outOfStockOverlay);
-        }
         const addToCartButton = this.createButton("Add to Cart", "btn btn-primary btn-sm add-to-cart-button", () => this.cart.addToCart(picture.id, picture.src, picture.name, picture.price), picture.stock === 0);
         col.append(img, nameLabel, priceLabel, addToCartButton);
         return col;

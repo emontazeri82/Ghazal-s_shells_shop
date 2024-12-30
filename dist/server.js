@@ -60,6 +60,7 @@ app.use(express.static(path.resolve(__dirname, "../htmls_folder")));
 app.use('/htmls', express.static(path.resolve(__dirname, '../htmls_folder')));
 app.use('/styles', express.static(path.resolve(__dirname, "../styles")));
 app.use('/images', express.static(path.resolve(__dirname, '../images')));
+app.use('/dist', express.static(path.resolve(__dirname, '../dist')));
 // Rate Limiting Middleware
 const apiLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
@@ -112,6 +113,26 @@ app.get("/api/products", async (req, res) => {
     catch (error) {
         logger.error("Error fetching products", { error });
         res.status(500).json({ error: "Failed to fetch products" });
+    }
+});
+// Sync Cart Endpoint
+app.post("/api/sync-cart", async (req, res) => {
+    const { customerId, sessionId, cart } = req.body;
+    if (!customerId || !sessionId || !Array.isArray(cart)) {
+        res.status(400).json({ message: "Invalid data format" });
+        return;
+    }
+    try {
+        const db = await connectToDatabase();
+        for (const item of cart) {
+            await db.run(`INSERT INTO cart (customer_id, session_id, product_id, quantity, timestamp) 
+         VALUES (?, ?, ?, ?, ?)`, [customerId, sessionId, item.id, item.quantity, new Date().toISOString()]);
+        }
+        res.status(200).json({ message: "Cart synced successfully" });
+    }
+    catch (error) {
+        logger.error("Error syncing cart", { error });
+        res.status(500).json({ error: "Failed to sync cart" });
     }
 });
 // Health Check Endpoint

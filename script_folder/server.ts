@@ -67,6 +67,8 @@ app.use(express.static(path.resolve(__dirname, "../htmls_folder")));
 app.use('/htmls', express.static(path.resolve(__dirname, '../htmls_folder')));
 app.use('/styles', express.static(path.resolve(__dirname, "../styles")));
 app.use('/images', express.static(path.resolve(__dirname, '../images')));
+app.use('/dist', express.static(path.resolve(__dirname, '../dist')));
+
 
 // Rate Limiting Middleware
 const apiLimiter = rateLimit({
@@ -125,6 +127,94 @@ app.get("/api/products", async (req: Request, res: Response) => {
   } catch (error) {
       logger.error("Error fetching products", { error });
       res.status(500).json({ error: "Failed to fetch products" });
+  }
+});
+
+// Sync Cart Endpoint
+app.post("/api/sync-cart", async (req: Request, res: Response): Promise<void> => {
+  const { customerId, sessionId, cart }: { customerId: string; sessionId: string; cart: { id: number; quantity: number }[] } = req.body;
+
+  if (!customerId || !sessionId || !Array.isArray(cart)) {
+    res.status(400).json({ message: "Invalid data format" });
+    return;
+  }
+
+  try {
+    const db = await connectToDatabase();
+
+    for (const item of cart) {
+      await db.run(
+        `INSERT INTO cart (customer_id, session_id, product_id, quantity, timestamp) 
+         VALUES (?, ?, ?, ?, ?)`,
+        [customerId, sessionId, item.id, item.quantity, new Date().toISOString()]
+      );
+    }
+
+    res.status(200).json({ message: "Cart synced successfully" });
+  } catch (error) {
+    logger.error("Error syncing cart", { error });
+    res.status(500).json({ error: "Failed to sync cart" });
+  }
+});
+// Save Payment and Shipping Details Endpoint
+app.post("/api/save-payment", async (req: Request, res: Response): Promise<void> => {
+  const {
+    customer_id,
+    session_id,
+    cart_id,
+    total_price,
+    payment_status,
+    shipping_address,
+    billing_address,
+    payment_method,
+  }: {
+    customer_id: number;
+    session_id: string;
+    cart_id: number;
+    total_price: number;
+    payment_status: string;
+    shipping_address: string;
+    billing_address: string;
+    payment_method: string;
+  } = req.body;
+
+  if (!customer_id || !session_id || !cart_id || !total_price || !shipping_address || !billing_address) {
+    // return res.status(400).json({ error: "Invalid request data" });
+    return;
+  }
+
+  try {
+    const db = await connectToDatabase();
+
+    // Insert into customer_payments table
+    const result = await db.run(
+      `INSERT INTO customer_payments 
+      (customer_id, session_id, cart_id, total_price, payment_status, shipping_address, billing_address, payment_method) 
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+      [
+        customer_id,
+        session_id,
+        cart_id,
+        total_price,
+        payment_status || "Pending",
+        shipping_address,
+        billing_address,
+        payment_method || "PayPal",
+      ]
+    );
+
+    const paymentId = result.lastID; // Get the ID of the inserted payment
+
+    // Optionally insert into shipping_details table if shipping_address is provided
+    await db.run(
+      `INSERT INTO shipping_details (payment_id, shipping_status) VALUES (?, ?)`,
+      [paymentId, "Pending"]
+    );
+
+    res.status(200).json({ success: true, payment_id: paymentId });
+  } catch (error) {
+    logger.error("Error saving payment", { error });
+    res.status(500).json({ error: "Failed to save payment data" });
   }
 });
 

@@ -58,13 +58,21 @@ export class EnhancedCart {
     private updateCartDisplay(): void {
         this.cartItemsElement.innerHTML = "";
 
+        const viewCartLink = this.cartModalElement.querySelector<HTMLAnchorElement>(".view-cart-link");
+
+        if (!viewCartLink) {
+            console.error("View Cart link not found.");
+            return;
+        }
         if (this.cart.length === 0) {
             this.cartItemsElement.innerHTML = "<li class='list-group-item'>Your cart is empty.</li>";
             this.cartCountElement.textContent = "0";
             this.cartTotalElement.textContent = "0.00";
+            viewCartLink.style.display = "none"; 
             return;
         }
 
+        viewCartLink.style.display = "inline"; // Show link
         const totalItems = this.cart.reduce((sum, item) => sum + item.quantity, 0);
         const totalPrice = this.cart.reduce((sum, item) => sum + (item.price || 0) * item.quantity, 0);
 
@@ -76,9 +84,12 @@ export class EnhancedCart {
             listItem.className = "list-group-item d-flex justify-content-between align-items-center";
 
             listItem.innerHTML = `
-                <span>${item.name || "Unnamed"} (${item.quantity})</span>
-                <button class="btn btn-danger btn-sm remove-btn">Remove</button>
-            `;
+            <div class="d-flex align-items-center">
+                <img src="${item.src}" alt="${item.name || "Product"}" class="img-thumbnail me-3" style="width: 50px; height: 50px;">
+                <span>${item.name || "Unnamed Product"}</span>
+            </div>
+            <button class="btn btn-danger btn-sm remove-btn">Remove</button>
+        `;
 
             listItem.querySelector(".remove-btn")!.addEventListener("click", () => this.removeFromCart(item.id));
             this.cartItemsElement.appendChild(listItem);

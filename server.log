@@ -15530,3 +15530,243 @@
 {"level":"info","message":"Server is running at http://localhost:3000"}
 {"level":"info","message":"Initiating server shutdown..."}
 {"level":"info","message":"Database connection closed."}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Server is running at http://localhost:3000"}
+{"level":"info","message":"Initiating server shutdown..."}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Server is running at http://localhost:3000"}
+{"level":"info","message":"Initiating server shutdown..."}
+{"level":"info","message":"Database connection closed."}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Server is running at http://localhost:3000"}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Initiating server shutdown..."}
+{"level":"info","message":"Database connection closed."}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Server is running at http://localhost:3000"}
+{"level":"info","message":"Initiating server shutdown..."}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Server is running at http://localhost:3000"}
+{"level":"info","message":"Initiating server shutdown..."}
+{"level":"info","message":"Database connection closed."}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Server is running at http://localhost:3000"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"error":{"code":"SQLITE_ERROR","errno":1},"level":"error","message":"Error syncing cart"}
+{"level":"info","message":"Initiating server shutdown..."}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Server is running at http://localhost:3000"}
+{"level":"info","message":"Initiating server shutdown..."}
+{"level":"info","message":"Database connection closed."}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Server is running at http://localhost:3000"}
+{"level":"info","message":"Initiating server shutdown..."}
+{"level":"info","message":"Database connection closed."}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Server is running at http://localhost:3000"}
+{"level":"info","message":"Initiating server shutdown..."}
+{"level":"info","message":"Database connection closed."}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Server is running at http://localhost:3000"}
+{"level":"info","message":"Initiating server shutdown..."}
+{"level":"info","message":"Database connection closed."}
+{"level":"info","message":"Connected to SQLite database."}
+{"level":"info","message":"Server is running at http://localhost:3000"}
+{"level":"info","message":"Initiating server shutdown..."}
+{"level":"info","message":"Database connection closed."}

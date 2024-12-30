@@ -13,7 +13,7 @@
     "rootDir": "./script_folder", // Include all TypeScript files in the project
     "resolveJsonModule": true,
     "noEmitOnError": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "@components/*": ["script_folder/components/*"],
       "@styles/*": ["styles/*"]

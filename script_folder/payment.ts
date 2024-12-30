@@ -61,9 +61,40 @@ document.addEventListener("DOMContentLoaded", function () {
             try {
                 const order = await actions.order.capture();
                 console.log("Order Captured:", order);
-
-                if (statusContainer) {
-                    statusContainer.innerHTML = `PayPal payment successful! Order ID: ${order.id}`;
+        
+                // Extract necessary data from the PayPal order
+                const totalAmount = order.purchase_units[0].amount.value;
+                const billingAddress = order.payer.address; // Adjust based on PayPal response
+                const shippingAddress = order.purchase_units[0].shipping?.address; // Adjust based on PayPal response
+        
+                // Construct payload for backend
+                const payload = {
+                    customer_id: "CUSTOMER_ID_FROM_SESSION", // Replace with actual customer ID
+                    session_id: "SESSION_ID_FROM_SESSION", // Replace with actual session ID
+                    cart_id: "CART_ID_FROM_FRONTEND", // Replace with actual cart ID
+                    total_price: totalAmount,
+                    payment_status: "Paid",
+                    shipping_address: shippingAddress ? JSON.stringify(shippingAddress) : null,
+                    billing_address: billingAddress ? JSON.stringify(billingAddress) : null,
+                    payment_method: "PayPal",
+                };
+        
+                // Send payment data to backend
+                const response = await fetch("/api/save-payment", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload),
+                });
+        
+                const result = await response.json();
+        
+                if (result.success) {
+                    console.log("Payment data saved successfully.");
+                    if (statusContainer) {
+                        statusContainer.innerHTML = `Payment successful! Order ID: ${order.id}`;
+                    }
+                } else {
+                    throw new Error(result.message || "Failed to save payment data.");
                 }
             } catch (error) {
                 handleError(error, "PayPal payment failed.");
@@ -71,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 disableOrderTypeButtons(false);
             }
         },
+        
         onCancel: function () {
             disableOrderTypeButtons(false);
         },

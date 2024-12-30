@@ -373,7 +373,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const galleryConfig: GalleryConfig = {
             batchSize: 10,
             gridClasses: "col-12 col-sm-6 col-md-4 col-lg-3",
-            fallbackImage: "../images/fallback.jpg",
+            fallbackImage: "/fallback.jpg",
         };
         const cart = new EnhancedCart("cart-icon", "cartModal");
         new InfiniteScrollGallery("gallery", cart, pictures, galleryConfig);

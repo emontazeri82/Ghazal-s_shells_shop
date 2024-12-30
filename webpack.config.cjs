@@ -1,6 +1,8 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin'); // Import CopyPlugin
 
+
+
 module.exports = {
     entry: './script_folder/index.ts', // Entry point for your app
     output: {
@@ -47,10 +49,17 @@ module.exports = {
     devServer: {
         static: [
             {
+                directory: path.resolve(__dirname, 'dist'), // Serve all files from dist folder
+            },
+            {
                 directory: path.resolve(__dirname, 'htmls_folder'), // Serve HTML files
             },
             {
                 directory: path.resolve(__dirname, 'images'), // Serve images
+            },
+            {
+                directory: path.resolve(__dirname, 'dist'), // Explicitly serve view_cart.js
+                publicPath: '/', // Specify the public path
             },
         ],
         port: 8080,

@@ -1,0 +1,175 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .checkout-header {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .express-payment-buttons button {
+    width: 150px;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .express-payment-buttons button.shop-pay {
+    background-color: #7f56d9;
+  }
+  
+  .express-payment-buttons button.paypal {
+    background-color: #ffc439;
+  }
+  
+  .express-payment-buttons button.google-pay {
+    background-color: #000;
+  }
+  
+  .express-payment-buttons button.venmo {
+    background-color: #3d95ce;
+  }
+  
+  .section-title {
+    font-weight: 600;
+    color: #495057;
+    margin-top: 2rem;
+  }
+  
+  .form-label {
+    font-weight: 500;
+  }
+  
+  .form-control {
+    height: 45px;
+  }
+  
+  .btn-pay-now {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  
+  .btn-pay-now:hover {
+    background-color: #c82333;
+  }
+  #name-on-card {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+  }
+  
+/* General input styling for better appearance */
+/* Style Inputs */
+.form-control-sm {
+    max-width: 100%;
+    padding: 5px 10px; /* Reduce padding for compact look */
+    font-size: 14px; /* Smaller text size */
+  }
+  
+  /* Center alignment on desktop */
+  @media (min-width: 768px) {
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    form {
+      max-width: 650px; /* Restrict form width */
+      margin: 0 auto; /* Center the form */
+    }
+    
+    .btn-pay-now {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .order-options {
+      flex-direction: column; /* Stack options vertically on small screens */
+      gap: 10px;
+    }
+    .order-option {
+        width: 100%; /* Full width for small devices */
+    }  
+  }
+  .form-label {
+    font-size: 14px;
+  }
+  .form-control-sm {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  /* Order Options Section */
+.order-options {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+}
+
+.order-option {
+  flex: 1;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-option input[type="radio"] {
+  display: none; /* Hide actual radio buttons */
+}
+
+.order-option label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.order-option i {
+  font-size: 24px;
+  color: #6c757d;
+}
+
+/* Active/Selected Option */
+.order-option input[type="radio"]:checked + label {
+  color: #7f56d9;
+  font-weight: 600;
+}
+
+.order-option input[type="radio"]:checked + label i {
+  color: #7f56d9;
+}
+
+/* Hover Effect */
+.order-option:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: #7f56d9;
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+  .order-options {
+    flex-direction: column;
+  }
+
+  .order-option {
+    width: 100%;
+  }
+}
+
+  
